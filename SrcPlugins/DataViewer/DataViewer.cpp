@@ -163,7 +163,6 @@ void DataViewer::onDatabaseItemActivated(const DatabaseItem &item)
 
     d_ptr->m_tableData->setModel(modelData);
     d_ptr->m_tableData->setEditTriggers(QAbstractItemView::DoubleClicked | QAbstractItemView::EditKeyPressed);
-    d_ptr->m_tableData->resizeColumnsToContents();
 
     d_ptr->m_tab->setTabText(::Data, tr(::c_dataTable).arg(item.m_value));
 
